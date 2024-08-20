@@ -1,0 +1,81 @@
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+
+}
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 100%;
+    overflow: hidden;
+
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    font-size: 2rem;  /* Smaller font size for better fit on small screens */
+    text-align: center;
+    background-color: hsl(0, 0%, 25%);
+    color: white;
+    border: none;
+    border-radius: 0%;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+
+}
+
+button{
+    width: 20vw;  /* Button width is 20% of the viewport width */
+    height: 20vw; /* Button height matches the width for a square shape */
+    max-width: 100px;  /* Limit the maximum size to 100px for larger screens */
+    max-height: 100px; /* Limit the maximum height as well */
+    border-radius: 50%;  /* Keep the buttons circular */
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 2rem;  /* Adjust the font size for better fit */
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{
+    background-color: hsl(35, 100%, 55%);
+}
+.operator-btn:hover{
+    background-color: hsl(35, 100%, 65%);
+}
+.operator-btn:active{
+    background-color: hsl(35, 100%, 75%);
+}
+
+input{
+    width: 20vw;  /* Button width is 20% of the viewport width */
+    height: 20vw; /* Button height matches the width for a square shape */
+    max-width: 100px;  /* Limit the maximum size to 100px for larger screens */
+    max-height: 100px; /* Limit the maximum height as well */
+    border-radius: 50%;  /* Keep the buttons circular */
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 2rem;  /* Adjust the font size for better fit */
+    font-weight: bold;
+    cursor: pointer;
+    background-color: hsl(251, 100%, 48%);
+}
